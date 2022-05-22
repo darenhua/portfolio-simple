@@ -1,0 +1,68 @@
+html, body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+html {
+  font-size: 16px;
+  font-family: 'Merriweather', serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5;
+
+}
+
+header {
+  width: 100%;
+  padding-top: .5rem;
+  flex: 1;
+}
+
+h1 {
+  margin-left: 2rem;
+}
+
+h1 > a {
+  font-weight: 700;
+  text-decoration: none;
+  color: black;
+
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav > ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+nav li {
+  margin: .6rem;
+}
+
+nav li > a {
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+}
+
+nav li > a:last-child {
+  margin-right: 1.8rem;
+}
+
+main {
+  flex: 6;
+
+}
