@@ -1,45 +1,57 @@
 main {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 main > section {
-  width: 80%;
-  height: 80%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .left-section {
-  flex: 1;
+    flex: 1;
+    justify-content: flex-start;
+    align-items: flex-end;
 }
 
 .right-section {
-  flex: 2;
+    flex: 2;
 }
 
-.right-section > *{
-  width: 70%;
+.right-section > * {
+    width: 70%;
 }
 
 .right-section > h3 {
-  font-size: 2rem;
-  margin-top: 0rem;
+    font-size: 2rem;
+    margin-top: 0rem;
 }
 
 .about-link {
-  font-weight: 700;
-  position: relative;
+    font-weight: 700;
+    position: relative;
 }
 
 .about-link::after {
-  content: "";
-  position: absolute;
-  background-color: rgb(50, 50, 50);
-  bottom: 0;
-  left: 0;
-  width: 3rem;
-  height: .1rem;
+    content: "";
+    position: absolute;
+    background-color: rgb(50, 50, 50);
+    bottom: 0;
+    left: 0;
+    width: 3rem;
+    height: 0.1rem;
+}
+
+img {
+    max-width: 19rem;
+}
+
+@media screen and (max-width: 880px) {
+    .left-section {
+        display: none;
+    }
 }

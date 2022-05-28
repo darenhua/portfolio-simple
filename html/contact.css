@@ -1,42 +1,50 @@
 main {
-  display: grid;
-  place-items: center;
+    display: grid;
+    place-items: center;
 }
 
 main > section {
-  height: 80%;
-  width: 60%;
-  display: flex;
-  flex-direction: column;
+    height: 80%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
 }
 
 section > h3 {
-  font-size: 2rem;
-  margin-top: 0rem;
+    font-size: 2rem;
+    margin-top: 0rem;
 }
 
 section > div {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 section p {
-  margin-top: .8rem;
-  
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
 }
 
 .contact-link {
-  font-weight: 700;
-  position: relative;
+    font-weight: 700;
+    position: relative;
 }
 
 .contact-link::after {
-  content: "";
-  position: absolute;
-  background-color: rgb(50, 50, 50);
-  bottom: 0;
-  left: 0;
-  width: 3.9rem;
-  height: .1rem;
+    content: "";
+    position: absolute;
+    background-color: rgb(50, 50, 50);
+    bottom: 0;
+    left: 0;
+    width: 3.9rem;
+    height: 0.1rem;
+}
+
+@media screen and (max-width: 1180px) {
+    section > div {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
 }
